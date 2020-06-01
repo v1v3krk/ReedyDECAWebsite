@@ -1,0 +1,90 @@
+.cardBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tabCard {
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 100%;
+}
+
+.tabCard:hover{
+    transform: scale(1.04);
+}
+
+.tabBodyText {
+    color: black;
+}
+
+.tabHeaderText {
+    font-size: 1.6em;
+    font-family: 'Oswald';
+    color: #497c99;
+}
+
+.mission {
+    color: white;
+    background-color: #4a86e8;
+    padding: 20px 10px;
+    font-family: 'Oswald';
+}
+
+.synopsis {
+    color: white;
+    background-color: #25783b;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+}
+
+.footer {
+    background-color: #4a86e8;
+    height: 150px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 660px) {
+    .tabHeaderText {
+        font-size: 2em;
+        font-family: 'Oswald';
+    }
+
+    .tabBodyText {
+        font-size: 1.2em;
+    }
+
+    .mission, .synopsis {
+        font-size: 1.2em;
+    }
+
+    .cardBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .cardBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .mission, .synopsis {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .cardBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .mission, .synopsis {
+        font-size: 1.6em;
+    }
+}

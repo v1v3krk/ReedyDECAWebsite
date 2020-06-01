@@ -1,0 +1,225 @@
+.mainer {
+    margin-bottom: 0px;
+    background: url(../../../assets/images/SquareLogoBlurred.png);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 10px;
+
+}
+
+.MainBackground {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-radius: 0px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    max-width: 1500px;
+    margin: auto;
+    color: black;
+}
+
+.headerText {
+    /* color: #4a86e8; */
+    font-weight: 600;
+    font-size: 4em;
+    margin-bottom: 0px;
+    grid-column: 1/13;
+}
+
+.motto {
+    /* color: #497c99; */
+    font-size: 1.75em;
+    grid-column: 1/13;
+}
+
+
+.externalLinks {
+    width: 100%;
+    margin: 20px 0;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    
+}
+
+.externalLinks a:nth-child(1){
+    grid-column: 2/7;
+}
+
+.externalLinks a:nth-child(2){
+    grid-column: 7/12;
+}
+
+.externalLinks a Button:hover {
+    background-color: #25783b;
+    border: transparent;
+    width: 100%;
+    transform: scale(1.05);
+}
+
+.externalLinks a Button {
+    background-color: #4a86e8;
+    border: transparent;
+    width: 100%;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 660px) {
+
+    .mainer {
+        margin-bottom: 0px;
+        background: url(../../../assets/images/SquareLogo.png);
+        background-size: 150%;
+        background-position: center left;
+        background-repeat: no-repeat;
+        height: 400px;
+        padding: 170px 10px;
+    }
+
+    .MainBackground{
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 0px;
+    }
+
+    .headerText {
+        color: #4a86e8;
+        font-weight: 600;
+        font-size: 3.5em;
+        margin-bottom: 0px;
+        grid-column: 1/7;
+    }
+    
+    .motto {
+        color: #497c99;
+        font-size: 1.5em;
+        grid-column: 1/7;
+    }
+    
+    
+    .externalLinks {
+        width: 100%;
+        margin: 10px 0;
+        grid-column: 1/6;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 15px;        
+    }
+    
+    .externalLinks a:nth-child(1){
+        grid-column: 1/5;
+    }
+    
+    .externalLinks a:nth-child(2){
+        grid-column: 5/9;
+    }
+
+    .externalLinks a Button {
+        font-size: 0.89em;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .mainer {
+        padding: 120px 10px;
+        height: 500px;
+    }
+
+    .MainBackground{
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 80px;
+    }
+
+    .headerText {
+        color: #4a86e8;
+        font-weight: 600;
+        font-size: 5em;
+        margin-bottom: 0px;
+        grid-column: 1/7;
+    }
+    
+    .motto {
+        color: #497c99;
+        font-size: 1.75em;
+        grid-column: 1/7;
+    }
+    
+    
+    .externalLinks {
+        width: 100%;
+        margin: 10px 0;
+        grid-column: 1/6;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 15px;        
+    }
+    
+    .externalLinks a:nth-child(1){
+        grid-column: 1/5;
+    }
+    
+    .externalLinks a:nth-child(2){
+        grid-column: 5/9;
+    }
+
+    .externalLinks a Button {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .mainer {
+        height: 720px;
+        background-size: 140%;
+        background-position: center left;
+
+    }
+    .MainBackground{
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 200px;
+    }
+
+    .headerText {
+        color: #4a86e8;
+        font-weight: 600;
+        font-size: 6em;
+        margin-bottom: 0px;
+        grid-column: 1/7;
+    }
+    
+    .motto {
+        color: #497c99;
+        font-size: 3em;
+        grid-column: 1/7;
+    }
+    
+    
+    .externalLinks {
+        width: 100%;
+        margin: 10px 0;
+        grid-column: 1/6;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 15px;        
+    }
+    
+    .externalLinks a:nth-child(1){
+        grid-column: 1/5;
+    }
+    
+    .externalLinks a:nth-child(2){
+        grid-column: 5/9;
+    }
+
+    .externalLinks a Button {
+        font-size: 1.25em;
+    }
+}
