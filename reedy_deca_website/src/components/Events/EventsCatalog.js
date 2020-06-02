@@ -11,28 +11,6 @@ import {FaBriefcase, FaUsers, FaUser, FaMoneyCheck,
 
 class EventsCatalog extends Component {
 
-    // state = {
-    //     openElements: []
-    // }
-
-    // toggleEvents = (id) => {
-
-    //     let oldElementsOpen = [...this.state.openElements];
-    //     if(oldElementsOpen.includes(id)) {
-    //         oldElementsOpen = oldElementsOpen.filter(value => (value !== id));
-    //     } else {
-    //         oldElementsOpen.push(id);
-    //     }
-        
-
-    //     this.setState({
-    //         openElements: oldElementsOpen,
-    //     })
-
-        
-    // }
-
-
     render () {
 
         const iconStyle = {
@@ -55,14 +33,6 @@ class EventsCatalog extends Component {
         
         const EventRenderList = Object.keys(EventSectionList).map((element, igKey) => {
             return (
-                // <div key={igKey}>
-                //     <div className="EventSection" onClick={() => (this.toggleEvents(igKey))}>
-                //         <p>^</p>
-                //         <p>{element}</p>
-                        
-                //     </div>
-                //     {this.state.openElements.includes(igKey) ? <p>Sample Event</p> : null}
-                // </div>
                 <a href={"/events/" + EventSectionList[element][0]} key={igKey} style={{textDecoration:'none'}}>
                      <div className="EventSection">
                          {EventSectionList[element][2]}

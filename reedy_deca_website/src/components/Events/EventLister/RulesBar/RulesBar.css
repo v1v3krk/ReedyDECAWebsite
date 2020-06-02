@@ -1,0 +1,81 @@
+.RulesBar {
+    color: white;
+    background-color: #4a86e8;
+    font-family: 'Oswald';
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -30px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.RulesBar div {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+.RuleText {
+    font-size: 1em;
+}
+
+
+.RulesBar:last-child {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.Icon{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.times p {
+    margin: 0px;
+}
+
+@media screen and (min-width: 660px) {
+    .RulesBar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Icon{
+        font-size: 50px;
+        margin: 20px;
+    }
+
+    .RuleText {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .RulesBar {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .Icon{
+        font-size: 60px;
+        margin: 20px;
+    }
+
+    .RuleText {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .RuleText {
+        font-size: 1.3em;
+    }
+
+} 
