@@ -1,0 +1,104 @@
+.mainerEvents {
+    margin-bottom: 0px;
+    background: url(../../../assets/images/SquareLogo.png);
+    background-size: 200%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 0px 10px 0px 10px;
+
+}
+
+.EventBackground {
+    display: flex;
+    flex-flow: column;
+    border-radius: 0px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    max-width: 1500px;
+    margin: auto;
+    color: black;
+}
+
+.headerEventsText {
+    color: #4a86e8;
+    font-weight: 600;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+.eventsDescription {
+    font-size: 1.75em;
+}
+
+@media screen and (min-width: 660px) {
+
+    .mainerEvents {
+        margin-bottom: 0px;
+        background: url(../../../assets/images/SquareLogo.png);
+        background-size: 150%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .MainBackground{
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 0px;
+    }
+
+    .headerEventsText {
+        font-weight: 600;
+        font-size: 3.5em;
+        margin-bottom: 0px;
+    }
+    
+    .eventsDescription {
+        font-size: 1.5em;
+    }
+    
+    
+}
+
+@media screen and (min-width: 960px) {
+
+    .MainBackground{
+        text-align: left;
+        padding-top: 80px;
+    }
+
+    .headerEventsText {
+        font-weight: 600;
+        font-size: 5em;
+        margin-bottom: 0px;
+    }
+    
+    .eventsDescription {
+        font-size: 1.75em;
+    }
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    
+    .MainBackground{
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 200px;
+    }
+
+    .headerEventsText {
+        font-weight: 600;
+        font-size: 6em;
+        margin-bottom: 0px;
+    }
+    
+    .eventsDescription {
+        font-size: 3em;
+    }
+    
+    
+}

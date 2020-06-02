@@ -9,10 +9,16 @@
     background-color: #f2f2f2;
     padding: 20px;
     height: 100%;
+    border-top: 8px solid #25783b;
 }
 
 .tabCard:hover{
     transform: scale(1.04);
+    border-top: 8px solid #1750ac;
+}
+
+.tabCard:hover .icon{
+    color: #1750ac;
 }
 
 .tabBodyText {
@@ -28,7 +34,7 @@
 .mission {
     color: white;
     background-color: #4a86e8;
-    padding: 20px 10px;
+    padding: 40px 10px;
     font-family: 'Oswald';
 }
 
@@ -40,10 +46,10 @@
     font-family: 'Oswald';
 }
 
-.footer {
-    background-color: #4a86e8;
-    height: 150px;
-    margin-top: 10px;
+.icon {
+    font-size: 100px;
+    margin: 20px;
+    color: #25783b;
 }
 
 @media screen and (min-width: 660px) {

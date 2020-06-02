@@ -1,0 +1,30 @@
+.DescriptionBar {
+    color: white;
+    background-color: #4a86e8;
+    padding: 40px 30px;
+    font-family: 'Oswald';
+}
+
+@media screen and (min-width: 660px) {
+
+    .DescriptionBar {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .DescriptionBar {
+        font-size: 1.4em;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .DescriptionBar {
+        font-size: 1.6em;
+    }
+    
+}

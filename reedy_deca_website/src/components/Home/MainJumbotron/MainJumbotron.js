@@ -1,5 +1,4 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import { Button }from 'react-bootstrap';
 import './MainJumbotron.css';
 
@@ -7,7 +6,7 @@ import './MainJumbotron.css';
 const mainJumbotron = (props) => {
 
     return (
-        <div>
+        <div class="MainJumbotron">
             <div className="mainer">
                 <div className="MainBackground">
                     <p class="headerText">REEDY DECA</p>
