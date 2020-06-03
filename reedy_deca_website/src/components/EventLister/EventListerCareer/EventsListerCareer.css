@@ -1,4 +1,4 @@
-.SubEventCard {
+.CareerSubEventCard {
     padding: 20px;
     background-color: #eeeeee;
     margin: 20px 20px 0px 20px;
@@ -8,15 +8,15 @@
     font-family: 'Oswald';
 }
 
-.SubEvent {
+.CareerSubEvent {
     font-size: 1.5em;
 }
 
-.SubEventCard:hover {
+.CareerSubEventCard:hover {
     cursor: pointer;
 }
 
-.SubEventDesc {
+.CareerSubEventDesc {
     padding: 20px;
     background-color: #dddddd;
     margin: 0 40px 20px 40px;
@@ -27,7 +27,7 @@
     font-family: 'Oswald';
 }
 
-.SubEventStats {
+.CareerSubEventStats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -35,36 +35,36 @@
     max-width: 1000px;
 }
 
-.Desc {
+.CareerDesc {
     font-size: 1em;
 }
 
-.SubEventStats div {
+.CareerSubEventStats div {
     margin: 10px;
 }
 
-.StatHeader {
+.CareerStatHeader {
     color: #497c99;
     font-size: 4vw;
 }
 
-.StatDesc {
+.CareerStatDesc {
     font-size: 3vw;
 }
 
-.SubEventStats p {
+.CareerSubEventStats p {
     padding: 0px;
     margin: 0px;
 }
 
-.StatIcon {
+.CareerStatIcon {
     font-size: 45px;
     color: #497c99;
     padding: 5px;
 }
 
 @media screen and (min-width: 321px) {
-    .SubEventCard {
+    .CareerSubEventCard {
         padding: 20px;
         background-color: #eeeeee;
         margin: 20px 20px 0px 20px;
@@ -74,15 +74,15 @@
         font-family: 'Oswald';
     }
 
-    .SubEvent {
+    .CareerSubEvent {
         font-size: 1.5em;
     }
 
-    .SubEventCard:hover {
+    .CareerSubEventCard:hover {
         cursor: pointer;
     }
 
-    .SubEventDesc {
+    .CareerSubEventDesc {
         padding: 20px;
         background-color: #dddddd;
         margin: 0 40px 20px 40px;
@@ -93,7 +93,7 @@
         font-family: 'Oswald';
     }
 
-    .SubEventStats {
+    .CareerSubEventStats {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
@@ -101,139 +101,148 @@
         max-width: 1000px;
     }
 
-    .Desc {
+    .CareerDesc {
         font-size: 1em;
     }
 
-    .SubEventStats div {
+    .CareerSubEventStats div {
         margin: 10px;
     }
 
-    .StatHeader {
+    .CareerStatHeader {
         color: #497c99;
         font-size: 4vw;
     }
 
-    .StatDesc {
+    .CareerStatDesc {
         font-size: 3vw;
     }
 
-    .lastStat {
-        display: flex;
-        grid-column: 1/4;
+    .CareerlastStat {
+        display: block;
+        grid-column: 2/3;
         align-items: center;
         justify-content: center;
     }
 
-    .SubEventStats p {
+    .CareerSubEventStats p {
         padding: 0px;
         margin: 0px;
     }
 
-    .StatIcon {
+    .CareerStatIcon {
         font-size: 45px;
         margin: 10px;
         color: #497c99;
     }
 }
 
-.SubEventCardDesc, .SubEventCardDistrict, .SubEventCardState, .SubEventCardSuccess, .SubEventCardResources {
+.CareerSubEventCardDesc, .CareerSubEventCardDistrict, .CareerSubEventCardState, .CareerSubEventCardSuccess, .CareerSubEventCardResources, .CareerSubEventCardPIS {
     display: none;
 }
 
 
 @media screen and (min-width: 660px) {
 
-    .SubEvent {
+    .CareerSubEvent {
         font-size: 1.75em;
     }
 
-    .StatIcon {
+    .CareerStatIcon {
         font-size: 55px;
     }
 
-    .lastStat {
-        grid-column: 4/5;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
+    .CareerlastStat {
+        grid-column: 5/6;
     }
 
-    .SubEventStats {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .CareerSubEventStats {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .Desc {
+    .CareerDesc {
         font-size: 1.3em;
     }
 
-    .StatHeader {
+    .CareerStatHeader {
         font-size: 1.2em;
     }
 
-    .StatDesc {
+    .CareerStatDesc {
         font-size: 1.1em;
     }
 }
 
 @media screen and (min-width: 960px) {
 
-    .SubEvent {
+    .CareerSubEvent {
         font-size: 2em;
     }
 
-    .StatIcon {
+    .CareerSubEventStats {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .CareerStatIcon {
         font-size: 65px;
     }
 
-    .Desc {
+    .CareerDesc {
         font-size: 1.5em;
     }
 
-    .StatHeader {
+    .CareerStatHeader {
         font-size: 1.4em;
     }
 
-    .StatDesc {
+    .CareerStatDesc {
         font-size: 1.2em;
+    }
+
+    .CareerlastStat {
+        display: block;
+        grid-column: 5/6;
     }
 }
 
 @media screen and (min-width: 1200px) {
     
-    .SubEventDesc {
+    .CareerSubEventDesc {
         display: none;
     }
 
-    .SubEvent {
+    .CareerSubEvent {
         font-size: 1.75em;
         color: #497c99;
     }
 
-    .SubEventCard {
-        pointer-events: none;
+    .CareerSubEventCard {
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 3fr;
         gap: 15px;
         justify-content: flex-start;
     }
 
-    .lastStat {
+    #PIembed:hover {
+        color: black;
+    }
+
+    .CareerlastStat {
         justify-content: flex-start;
     }
 
-    .SubEventCardDesc, .SubEventCardDistrict, .SubEventCardState, .SubEventCardSuccess, .SubEventCardResources {
+    .CareerSubEventCardDesc, .CareerSubEventCardDistrict, .CareerSubEventCardState, .CareerSubEventCardSuccess, .CareerSubEventCardResources, .CareerSubEventCardPIS {
         display: block;
     }
 
-    .SubEventCardDesc {
+    .CareerSubEventCardDesc {
         font-size: 1.25em;
         padding: 10px;
     }
 
-    .SubEventCardIcons {
+    .CareerSubEventCardIcons {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         align-items: flex-start;
         gap: 15px;
     }

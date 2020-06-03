@@ -9,6 +9,7 @@ import ToolBar from './components/Navigation/ToolBar/ToolBar';
 import PBA from './components/EventLister/SubEvents/PBA';
 import TD from './components/EventLister/SubEvents/TD';
 import BOR from './components/EventLister/SubEvents/BOR';
+import EE from './components/EventLister/SubEvents/EE';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Route path="/events/pba" component={PBA} />
         <Route path="/events/td" component={TD} />
         <Route path="/events/bor" component={BOR} />
-        <footer>
+        <Route path="/events/e" component={EE} />
+        <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>
       </div>
