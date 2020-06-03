@@ -75,9 +75,9 @@ const ee = (props) => {
         <div>
             <JumbotronUniversal>ENTREPRENEURSHIP</JumbotronUniversal>
             <DescriptionBar>DECA’s Entrepreneurship Events provide opportunities to explore entrepreneurial concepts from idea generation, business planning, to growing an existing business.</DescriptionBar>
-            <RulesBarCareer rules={ee_top_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" pi="N/A" ee/>
+            <RulesBarCareer rules={ee_top_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" ppc="N/A" ee/>
             <EventListerCareer info={ee_top_info['SubEvents']} pronoun="teams" ee/>
-            <RulesBarCareer rules={ee_bottom_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" pi="N/A" ee top/>
+            <RulesBarCareer rules={ee_bottom_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" ppc="N/A" ee top/>
             <EventListerCareer info={ee_bottom_info['SubEvents']} pronoun="teams" ee/>
         </div>
         

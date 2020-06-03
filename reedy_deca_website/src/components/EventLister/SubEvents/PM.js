@@ -56,7 +56,7 @@ const pm = (props) => {
 
     return (
         <div>
-            <JumbotronUniversal>PROJECT MANAGEMENT EVENTS</JumbotronUniversal>
+            <JumbotronUniversal>PROJECT MANAGEMENT</JumbotronUniversal>
             <DescriptionBar>DECA’s Project Management Events require participants to use project management skills to initiate, plan, execute, monitor and control, and close a project.</DescriptionBar>
             <RulesBar rules={pm_total_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2019/07/HS_PME_Guidelines.pdf" ppc="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf"/>
             <EventListerPBA info={pm_total_info['SubEvents']} pronoun="teams"/>

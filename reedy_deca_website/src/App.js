@@ -13,6 +13,7 @@ import EE from './components/EventLister/SubEvents/EE';
 import ISE from './components/EventLister/SubEvents/IS';
 import PFL from './components/EventLister/SubEvents/PFL';
 import PM from './components/EventLister/SubEvents/PM';
+import IMC from './components/EventLister/SubEvents/IMC';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/events/is" component={ISE} />
         <Route path="/events/pfl" component={PFL} />
         <Route path="/events/pm" component={PM} />
+        <Route path="/events/imc" component={IMC} />
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>

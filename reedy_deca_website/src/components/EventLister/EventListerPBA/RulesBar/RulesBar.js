@@ -24,9 +24,10 @@ const rulesBar = (props) => {
                 </div>
                 }
             </div>
-            <div>
+            <div className="times">
                 <FaBook className="Icon"/>
                 <p className="RuleText">{props.rules['Exam']}</p>
+                {props.imc ? <p className="RuleText">20 (or Less) Page Written Entry</p> : null}
             </div>
             <div>
                 <FaComments className="Icon" />
@@ -37,9 +38,9 @@ const rulesBar = (props) => {
                 {props.rules['Prep Time'] ? <p className="RuleText">Prep: {props.rules['Prep Time']} Minutes</p>
                  : null}
                 
-                <p className="RuleText">{props.pi ? "Interview" : "Presentation"}: {props.rules['Interview Time']} Minutes</p>
+                <p className="RuleText">{props.pi && !props.imc? "Interview" : "Presentation"}: {props.rules['Interview Time']} Minutes</p>
             </div>
-            <div class="times">
+            <div className="times">
                 <a href={props.guidelines} target="_blank" style={{textDecoration:'none', color:'white'}}>
                     <MdGavel className="Icon" />
                     <p className="RuleText">Guidelines</p>
@@ -47,7 +48,7 @@ const rulesBar = (props) => {
                 </a>
             </div>
             {props.pi ?
-            <div class="times">
+            <div className="times">
                 <a href={props.pi} target="_blank" style={{textDecoration:'none', color:'white'}}>
                     <FaList className="Icon" />
                     <p className="RuleText">Performace Indicators</p>
@@ -55,7 +56,7 @@ const rulesBar = (props) => {
                 </a>
             </div>
             :
-            <div class="times">
+            <div className="times">
                 <a href={props.ppc} target="_blank" style={{textDecoration:'none', color:'white'}}>
                     <FaTimes className="Icon" />
                     <p className="RuleText">Penalty Point Checklist</p>
