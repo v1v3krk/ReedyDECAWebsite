@@ -3,9 +3,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
 
+import ToolBar from './components/Navigation/ToolBar/ToolBar';
 import Home from './containers/Home/Home';
 import Events from './containers/Events/Events';
-import ToolBar from './components/Navigation/ToolBar/ToolBar';
 import PBA from './components/EventLister/SubEvents/PBA';
 import TD from './components/EventLister/SubEvents/TD';
 import BOR from './components/EventLister/SubEvents/BOR';
@@ -16,6 +16,7 @@ import PM from './components/EventLister/SubEvents/PM';
 import IMC from './components/EventLister/SubEvents/IMC';
 import PSC from './components/EventLister/SubEvents/PSC';
 import ONL from './components/EventLister/SubEvents/ONL';
+import Contacts from './containers/Contacts/Contacts';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/events/imc" component={IMC} />
         <Route path="/events/psc" component={PSC} />
         <Route path="/events/o" component={ONL} />
+        <Route path="/contact" component={Contacts} />
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>
