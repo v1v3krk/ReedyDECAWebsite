@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {FaBell, FaInstagram, FaTwitter, FaUserGraduate} from 'react-icons/fa';
+import {FaBell, FaInstagram, FaTwitter, FaUserGraduate, FaEnvelope, FaDoorOpen} from 'react-icons/fa';
 
 import './ContactsList.css';
 
@@ -18,8 +18,22 @@ const contactsList = (props) => {
             'info': ['Code: xhoyu8'],
             'icon': <FaUserGraduate />,
             'color':'#20a464',
-            'link': 'https://classroom.google.com/u/1/h',
+            'link': 'https://classroom.google.com/u/0/h',
             'id': 'gc'
+        },
+
+        'GMAIL': {
+            'info': ['reedydeca2@gmail.com','raymondd@friscoisd.org'],
+            'icon': <FaEnvelope />,
+            'color': '#d44638',
+            'link': 'https://mail.google.com/mail/u/0/#inbox',
+            'id': 'gmail'
+        },
+        'ROOM NUMBER': {
+            'info': ['B105'],
+            'icon': <FaDoorOpen />,
+            'color': '#996515',
+            'id': 'room'
         },
         'INSTAGRAM': {
             'info': ['@reedydeca'],
@@ -34,7 +48,7 @@ const contactsList = (props) => {
             'color': '#00acee',
             'link': 'https://twitter.com/ReedyDeca',
             'id': 'twitter'
-        }
+        },
     }
 
     const contactRenderElements = Object.keys(contactElements)
@@ -67,12 +81,12 @@ const contactsList = (props) => {
 
     return (
         <div className="ContactCardHolder">
-            <div id="form" className="ContactCard">
+            {contactRenderElements}
+            <div id="form" className="ContactCardForm">
                 <div className="ContactForm">
-                    Form
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgiKqdJuwfKGJr0W0Nk9yTrUBhj9qNcLei72VLhZZDMv9M_w/viewform?embedded=true" width="100%" height="425" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
-            {contactRenderElements}
         </div>
     );
 

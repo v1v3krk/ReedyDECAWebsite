@@ -7,6 +7,15 @@
     gap: 10px;
 }
 
+.ContactCardForm {
+    background-color: #eeeeee;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 150px;
+    gap: 10px;
+}
+
 .ContactCard:hover {
     transform: scale(1.02);
 }
@@ -40,36 +49,77 @@
     font-size: 1.2em;
 }
 
-@media screen and (min-width: 990px) {
+.googleform {
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+    .ContactInfoHeader {
+        font-size: 1.4em;
+    }
+
+    .ContactInfoDesc {
+        font-size: 1.2em;
+    }
+
+    .ContactIcon {
+        font-size: 60px;
+    }
 
     .ContactCardHolder {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        gap: 10px;
+        font-family: 'Oswald';
     }
 
     #form {
         grid-column: 1/3;
-        grid-row: 1/3;
-        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .ContactCardHolder {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: dense;
+    }
+
+    #form {
+        grid-column: 3/5;
+        grid-row: 1/4;
     }
 
     #remind {
-        grid-column: 3/4;
+        grid-column: 1/2;
         grid-row: 1/2;
     }
 
     #gc {
-        grid-column: 4/5;
+        grid-column: 2/3;
         grid-row: 1/2;
     }
 
     #insta {
-        grid-column: 3/4;
+        grid-column: 1/2;
         grid-row: 2/3;
     }
 
     #twitter {
-        grid-column: 4/5;
+        grid-column: 2/3;
         grid-row: 2/3;
+    }
+
+    #gmail {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #room {
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 }
