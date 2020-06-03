@@ -6,11 +6,9 @@ import './App.css';
 import Home from './containers/Home/Home';
 import Events from './containers/Events/Events';
 import ToolBar from './components/Navigation/ToolBar/ToolBar';
-import PBA from './components/Events/SubEvents/PBA/PBA';
-
-
-
-
+import PBA from './components/EventLister/SubEvents/PBA';
+import TD from './components/EventLister/SubEvents/TD';
+import BOR from './components/EventLister/SubEvents/BOR';
 
 function App() {
   return (
@@ -23,6 +21,8 @@ function App() {
         <Route path="/events" component={Events} exact/>
         <Route path="/competitive events" component={Events} exact/>
         <Route path="/events/pba" component={PBA} />
+        <Route path="/events/td" component={TD} />
+        <Route path="/events/bor" component={BOR} />
         <footer>
           <div class="footer"/>
         </footer>

@@ -36,7 +36,7 @@ const cardBody = (props) => {
             <FaStoreAlt className="icon"/>
         ],
         'CONTACT': [
-            'Click Here to Contact Reedy DECA if You Have Any Questions or Follow our Social Medias.',
+            'Click Here to Contact Reedy DECA if You Have Any Questions or Want to Follow our Social Medias.',
             <FaAddressBook className="icon"/>
         ]
     }

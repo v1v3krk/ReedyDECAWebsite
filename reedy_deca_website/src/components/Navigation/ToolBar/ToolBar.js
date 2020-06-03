@@ -28,7 +28,7 @@ const toolBar = (props) => {
     }
 
     const navbarElements = ["EVENTS", 'MEMBERSHIP', 'OFFICERS', 'CALENDAR', 'STORE', 'CONTACT'].map((element, igKey) => {
-        return <Nav.Link key={igKey} href={element.toLowerCase()} style={navbarElementStyle}>{element}</Nav.Link>
+        return <Nav.Link key={igKey} href={"/" + element.toLowerCase()} style={navbarElementStyle}>{element}</Nav.Link>
     });
 
     return (

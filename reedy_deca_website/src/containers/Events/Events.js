@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import JumbotronUniversal from '../../components/UI/JumbotronUniversal/JumbotronUniversal';
-import EventsCatalog from '../../components/Events/EventsCatalog';
+import EventsCatalog from '../../components/EventLister/EventsCatalog';
 
 class Events extends Component {
 

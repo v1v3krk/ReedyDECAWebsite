@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {FaUser, FaUsers, FaBook, FaComments, FaStopwatch, FaList} from "react-icons/fa"
+import {FaUser, FaUsers, FaBook, FaComments, FaStopwatch, FaList, FaTimes} from "react-icons/fa"
 
 import { MdGavel } from "react-icons/md";
 
@@ -11,7 +11,7 @@ const rulesBar = (props) => {
     return (
         <div className="RulesBar">
             <div>
-                {props.rules['Participants'] > 1 
+                {props.rules['Participants'] > 1 || props.rules['Participants'] == "1 to 3"
                 ? 
                 <div>
                     <FaUsers className="Icon"/>
@@ -34,23 +34,36 @@ const rulesBar = (props) => {
             </div>
             <div className="times">
                 <FaStopwatch className="Icon" />
-                <p className="RuleText">Prep: {props.rules['Prep Time']} Minutes</p>
-                <p className="RuleText">Interview: {props.rules['Interview Time']} Minutes</p>
+                {props.rules['Prep Time'] ? <p className="RuleText">Prep: {props.rules['Prep Time']} Minutes</p>
+                 : null}
+                
+                <p className="RuleText">{props.pi ? "Interview" : "Presentation"}: {props.rules['Interview Time']} Minutes</p>
             </div>
             <div class="times">
-                <a href="https://www.deca.org/wp-content/uploads/2019/07/HS_PBA_Guidelines.pdf" target="_blank" style={{textDecoration:'none', color:'white'}}>
+                <a href={props.guidelines} target="_blank" style={{textDecoration:'none', color:'white'}}>
                     <MdGavel className="Icon" />
                     <p className="RuleText">Guidelines</p>
                     <p className="RuleText">(Click Here)</p>
                 </a>
             </div>
+            {props.pi ?
             <div class="times">
-                <a href="https://www.deca.org/wp-content/uploads/2019/07/HS_PBA_Guidelines.pdf" target="_blank" style={{textDecoration:'none', color:'white'}}>
+                <a href={props.pi} target="_blank" style={{textDecoration:'none', color:'white'}}>
                     <FaList className="Icon" />
                     <p className="RuleText">Performace Indicators</p>
                     <p className="RuleText">(Click Here)</p>
                 </a>
             </div>
+            :
+            <div class="times">
+                <a href={props.ppc} target="_blank" style={{textDecoration:'none', color:'white'}}>
+                    <FaTimes className="Icon" />
+                    <p className="RuleText">Penalty Point Checklist</p>
+                    <p className="RuleText">(Click Here)</p>
+                </a>
+            </div>
+            }
+            
         </div>
     )
 

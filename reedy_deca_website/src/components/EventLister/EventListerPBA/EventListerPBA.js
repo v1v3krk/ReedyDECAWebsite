@@ -41,21 +41,21 @@ class EventLister extends Component {
                                 <div>
                                     <FaBuilding className="StatIcon"/>
                                     <p className="StatHeader">Participants</p>
-                                    <p className="StatDesc">District: {this.props.info[element]['ParticipancyDistrict']} people</p>
+                                    <p className="StatDesc">District: {this.props.info[element]['ParticipancyDistrict']} {this.props.pronoun}</p>
                                 </div>
                             </div>
                             <div className="SubEventCardState">
                                 <div>
                                     <FaCity className="StatIcon"/>
                                     <p className="StatHeader">Participants</p>
-                                    <p className="StatDesc">State: {this.props.info[element]['ParticipancyState']} people</p>
+                                    <p className="StatDesc">State: {this.props.info[element]['ParticipancyState']} {this.props.pronoun}</p>
                                 </div>
                             </div>
                             <div className="SubEventCardSuccess">
                                 <div>
                                     <FaGlobeAmericas className="StatIcon"/>
                                     <p className="StatHeader">Qualifiers</p>
-                                    <p className="StatDesc">ICDC: {this.props.info[element]['Success']} people</p>
+                                    <p className="StatDesc">ICDC: {this.props.info[element]['Success']} {this.props.pronoun}</p>
                                 </div>  
                             </div>
                             <div className="SubEventCardResources">
@@ -74,17 +74,17 @@ class EventLister extends Component {
                             <div>
                                 <FaBuilding className="StatIcon"/>
                                 <p className="StatHeader">Participants</p>
-                                <p className="StatDesc">District: {this.props.info[element]['ParticipancyDistrict']} people</p>
+                                <p className="StatDesc">District: {this.props.info[element]['ParticipancyDistrict']} {this.props.pronoun}</p>
                             </div>
                             <div>
                                 <FaCity className="StatIcon"/>
                                 <p className="StatHeader">Participants</p>
-                                <p className="StatDesc">State: {this.props.info[element]['ParticipancyState']} people</p>
+                                <p className="StatDesc">State: {this.props.info[element]['ParticipancyState']} {this.props.pronoun}</p>
                             </div>
                             <div>
                                 <FaGlobeAmericas className="StatIcon"/>
                                 <p className="StatHeader">Qualifiers</p>
-                                <p className="StatDesc">ICDC: {this.props.info[element]['Success']} people</p>
+                                <p className="StatDesc">ICDC: {this.props.info[element]['Success']} {this.props.pronoun}</p>
                             </div>  
                             <div className="lastStat">
                                 <FaAtlas className="StatIcon"/>
