@@ -9,7 +9,7 @@ import './RulesBar.css';
 const rulesBar = (props) => {
 
     return (
-        <div className="RulesBar">
+        <div className="RulesBar" style={props.smg ? {marginTop: '30px'}: null}>
             <div>
                 {props.rules['Participants'] > 1 || props.rules['Participants'] === "1 to 3"
                 ? 
@@ -38,7 +38,10 @@ const rulesBar = (props) => {
                 {props.rules['Prep Time'] ? <p className="RuleText">Prep: {props.rules['Prep Time']} Minutes</p>
                  : null}
                 
-                <p className="RuleText">{props.pi && !props.imc? "Interview" : "Presentation"}: {props.rules['Interview Time']} Minutes</p>
+                {!props.smg ?
+                <p className="RuleText">{props.pi && !props.imc? "Interview" : "Presentation"}: {props.rules['Interview Time']} Minutes</p>:
+                <p className="RuleText">None</p>
+                }
             </div>
             <div className="times">
                 <a href={props.guidelines} target="_blank" style={{textDecoration:'none', color:'white'}}>
@@ -59,8 +62,13 @@ const rulesBar = (props) => {
             <div className="times">
                 <a href={props.ppc} target="_blank" style={{textDecoration:'none', color:'white'}}>
                     <FaTimes className="Icon" />
-                    <p className="RuleText">Penalty Point Checklist</p>
-                    <p className="RuleText">(Click Here)</p>
+                    {!props.smg ?
+                    <div>
+                        <p className="RuleText">Penalty Point Checklist</p>
+                        <p className="RuleText">(Click Here)</p>
+                    </div>
+                    :
+                    <p className="RuleText">None</p>}
                 </a>
             </div>
             }

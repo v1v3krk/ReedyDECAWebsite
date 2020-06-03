@@ -100,7 +100,7 @@ class EventLister extends Component {
         })
     
         return (
-            <div style={{minHeight: '800px'}}>
+            <div style={!this.props.smg ? {minHeight: '800px'}: null}>
                 {RenderSubEvents}
             </div>
         );

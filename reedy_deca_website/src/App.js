@@ -14,8 +14,8 @@ import ISE from './components/EventLister/SubEvents/IS';
 import PFL from './components/EventLister/SubEvents/PFL';
 import PM from './components/EventLister/SubEvents/PM';
 import IMC from './components/EventLister/SubEvents/IMC';
-
-
+import PSC from './components/EventLister/SubEvents/PSC';
+import ONL from './components/EventLister/SubEvents/ONL';
 
 
 function App() {
@@ -36,6 +36,8 @@ function App() {
         <Route path="/events/pfl" component={PFL} />
         <Route path="/events/pm" component={PM} />
         <Route path="/events/imc" component={IMC} />
+        <Route path="/events/psc" component={PSC} />
+        <Route path="/events/o" component={ONL} />
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>
