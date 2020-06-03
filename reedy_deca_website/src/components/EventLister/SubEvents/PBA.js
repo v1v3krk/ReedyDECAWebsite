@@ -19,26 +19,26 @@ const pba = (props) => {
             'Principles of Business Management and Administration': {
                 'Description': 'The business situation will use language associated with careers in Administrative Services, Business Information Management, General Management, Human Resources Management, and Operations Management.',
                 'ParticipancyDistrict': 50,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 98,
+                'Success': 10,
             },
             'Principles of Finance': {
                 'Description': 'The business situation will use language associated with careers in Accounting, Banking Services, Business Finance, Insurance and Securities, and Investments.',
                 'ParticipancyDistrict': 30,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 90,
+                'Success': 10,
             },
             'Principles of Hospitality and Tourism': {
                 'Description': 'The business situation will use language associated with careers in Hotels, Restaurants, and Tourism and Travel.',
                 'ParticipancyDistrict': 39,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 99,
+                'Success': 10,
             },
             'Principles of Marketing': {
                 'Description': 'The business situation will use language associated with careers in Marketing Communications, Marketing Management, Marketing Research, Merchandising and Professional Selling.',
                 'ParticipancyDistrict': 48,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 97,
+                'Success': 10,
             },
         }
     }

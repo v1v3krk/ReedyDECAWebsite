@@ -10,7 +10,7 @@ class Contacts extends Component {
         return (
             <div>
                 <JumbotronUniversal>CONTACT INFORMATION</JumbotronUniversal>
-                <DescriptionBar>
+                <DescriptionBar>Click the Cards Below to Follow our Socials, Set Up Educational Resources, and Contact Us!
                 </DescriptionBar>
                 <ContactsList />
             </div>

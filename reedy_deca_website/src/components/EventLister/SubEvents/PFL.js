@@ -19,8 +19,8 @@ const pfl = (props) => {
             'Personal Financial Literacy': {
                 'Description': 'Students will be assessed on their knowledge of areas such as: financial responsibility and decision making, income and careers, planning and money management, credit and debt, risk management and insurance, and saving and investing.',
                 'ParticipancyDistrict': 50,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 86,
+                'Success': 10,
             },
         }
     }

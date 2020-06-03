@@ -17,21 +17,21 @@ const imc = (props) => {
         'SubEvents': {
             'Integrated Marketing Campaign–Event': {
                 'Description': 'Integrated Marketing Campaign—Event includes a campaign that is related to any sports and entertainment event and/or company event. Examples include concerts, festivals, fairs, tournaments, pet adoption day, charity events, etc.',
-                'ParticipancyDistrict': 50,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyDistrict': "N/A",
+                'ParticipancyState': 32,
+                'Success': 8,
             },
             'Integrated Marketing Campaign–Product': {
                 'Description': 'Integrated Marketing Campaign—Product includes a campaign that is related to any hard/soft line retail products including e-commerce. Examples include apparel and accessories, retail products, etc.',
-                'ParticipancyDistrict': 30,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyDistrict': "N/A",
+                'ParticipancyState': 31,
+                'Success': 8,
             },
             'Integrated Marketing Campaign–Service': {
                 'Description': 'Integrated Marketing Campaign—Service includes a campaign that is related to any service or intangible product. Examples may include pet services, golf lessons, health care services, salons, restaurants, amusement parks, etc.',
-                'ParticipancyDistrict': 39,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyDistrict': "N/A",
+                'ParticipancyState': 22,
+                'Success': 8,
             },
         }
     }

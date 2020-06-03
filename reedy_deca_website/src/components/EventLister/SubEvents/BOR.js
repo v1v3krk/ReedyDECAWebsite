@@ -18,32 +18,32 @@ const bor = (props) => {
             'Business Services Operations': {
                 'Description': 'Business Services includes human resources, information technology and personal and contracted services businesses.',
                 'ParticipancyDistrict': 16,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 41,
+                'Success': 8,
             },
             'Buying and Merchandising Operations': {
                 'Description': 'Buying and Merchandising includes retail and wholesale businesses that provide consumer goods.',
                 'ParticipancyDistrict': 12,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 43,
+                'Success': 8,
             },
             'Finance Operations': {
                 'Description': 'Finance includes banks, credit unions, accounting, investments and other financial businesses.',
                 'ParticipancyDistrict': 12,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 28,
+                'Success': 8,
             },
             'Hospitality and Tourism Operations': {
                 'Description': 'Hospitality and Tourism includes hotels, restaurants and tourism-related businesses.',
                 'ParticipancyDistrict': 'N/A',
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 43,
+                'Success': 8,
             },
             'Sports and Entertainment Marketing Operations': {
                 'Description': 'Sports and Entertainment Marketing includes businesses that conduct sporting and/or entertainment events.',
                 'ParticipancyDistrict': 9,
-                'ParticipancyState': "N/A",
-                'Success': "N/A",
+                'ParticipancyState': 37,
+                'Success': 8,
             },
         }
     }
