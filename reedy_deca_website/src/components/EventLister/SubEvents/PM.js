@@ -56,8 +56,8 @@ const pm = (props) => {
 
     return (
         <div>
-            <JumbotronUniversal>BUSINESS OPERATIONS RESEARCH EVENTS</JumbotronUniversal>
-            <DescriptionBar>DECA’s Business Operations Research Events provide opportunities for participants to demonstrate knowledge and skills needed by management personnel. Students conduct actual research studies in their communities.</DescriptionBar>
+            <JumbotronUniversal>PROJECT MANAGEMENT EVENTS</JumbotronUniversal>
+            <DescriptionBar>DECA’s Project Management Events require participants to use project management skills to initiate, plan, execute, monitor and control, and close a project.</DescriptionBar>
             <RulesBar rules={pm_total_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2019/07/HS_PME_Guidelines.pdf" ppc="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf"/>
             <EventListerPBA info={pm_total_info['SubEvents']} pronoun="teams"/>
         </div>

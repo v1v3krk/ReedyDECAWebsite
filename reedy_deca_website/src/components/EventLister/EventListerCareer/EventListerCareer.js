@@ -4,6 +4,9 @@ import './EventsListerCareer.css';
 
 import {FaBuilding, FaCity, FaGlobeAmericas, FaAtlas, FaList} from "react-icons/fa"
 
+import { MdGavel } from "react-icons/md";
+
+
 
 class EventLister extends Component {
 
@@ -60,11 +63,18 @@ class EventLister extends Component {
                             </div>
                             <div className="CareerSubEventCardPIS">
                                 <a href={this.props.info[element]['PI']} target="_blank" style={{textDecoration:'none'}}>
+                                    {!this.props.ee ? 
                                     <div className="CareerlastStat">
                                         <FaList className="CareerStatIcon" style={{color:'#25783b'}}/>
                                         <p className="CareerStatHeader" style={{color:'#25783b'}}>Performance Indicators</p>
                                         <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
+                                    </div>:
+                                    <div className="CareerlastStat">
+                                        <MdGavel className="CareerStatIcon" style={{color:'#25783b'}}/>
+                                        <p className="CareerStatHeader" style={{color:'#25783b'}}>Guidelines</p>
+                                        <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
                                     </div>
+                                    }
                                 </a>
                             </div>
                             <div className="CareerSubEventCardResources">
@@ -97,9 +107,19 @@ class EventLister extends Component {
                             </div>
                             <div>
                                 <a href={this.props.info[element]['PI']} target="_blank" style={{textDecoration:'none'}}>
-                                    <FaList className="CareerStatIcon"/>
-                                    <p className="CareerStatHeader">Performance Indicators</p>
-                                    <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
+                                    {!this.props.ee ? 
+                                    <div>
+                                        <FaList className="CareerStatIcon"/>
+                                        <p className="CareerStatHeader">Performance Indicators</p>
+                                        <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
+                                    </div>
+                                    :
+                                    <div>
+                                        <MdGavel className="CareerStatIcon"/>
+                                        <p className="CareerStatHeader">Guidelines</p>
+                                        <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
+                                    </div>
+                                    }
                                 </a>
                             </div>   
                             <div className="CareerlastStat">
