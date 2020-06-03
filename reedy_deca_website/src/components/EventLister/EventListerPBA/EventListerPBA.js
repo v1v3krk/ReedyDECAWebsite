@@ -100,7 +100,7 @@ class EventLister extends Component {
         })
     
         return (
-            <div>
+            <div style={{minHeight: '800px'}}>
                 {RenderSubEvents}
             </div>
         );

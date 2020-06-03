@@ -11,6 +11,10 @@ import TD from './components/EventLister/SubEvents/TD';
 import BOR from './components/EventLister/SubEvents/BOR';
 import EE from './components/EventLister/SubEvents/EE';
 import ISE from './components/EventLister/SubEvents/IS';
+import PFL from './components/EventLister/SubEvents/PFL';
+import PM from './components/EventLister/SubEvents/PM';
+
+
 
 function App() {
   return (
@@ -27,6 +31,8 @@ function App() {
         <Route path="/events/bor" component={BOR} />
         <Route path="/events/e" component={EE} />
         <Route path="/events/is" component={ISE} />
+        <Route path="/events/pfl" component={PFL} />
+        <Route path="/events/pm" component={PM} />
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>
