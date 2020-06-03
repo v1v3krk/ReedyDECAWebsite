@@ -10,6 +10,7 @@ import PBA from './components/EventLister/SubEvents/PBA';
 import TD from './components/EventLister/SubEvents/TD';
 import BOR from './components/EventLister/SubEvents/BOR';
 import EE from './components/EventLister/SubEvents/EE';
+import ISE from './components/EventLister/SubEvents/IS';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/events/td" component={TD} />
         <Route path="/events/bor" component={BOR} />
         <Route path="/events/e" component={EE} />
+        <Route path="/events/is" component={ISE} />
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>

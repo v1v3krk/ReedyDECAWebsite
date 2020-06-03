@@ -11,7 +11,7 @@ const rulesBar = (props) => {
     return (
         <div className="RulesBar">
             <div>
-                {props.rules['Participants'] > 1 || props.rules['Participants'] == "1 to 3"
+                {props.rules['Participants'] > 1 || props.rules['Participants'] === "1 to 3"
                 ? 
                 <div>
                     <FaUsers className="Icon"/>

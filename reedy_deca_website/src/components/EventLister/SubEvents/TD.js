@@ -77,11 +77,11 @@ const td = (props) => {
 
     return (
         <div>
-            <JumbotronUniversal>Team Decision</JumbotronUniversal>
+            <JumbotronUniversal>TEAM DECISION</JumbotronUniversal>
             <DescriptionBar>DECA’s Team Decision Making Events provide an opportunity for participants to analyze one or a 
                 combination of elements essential to the effective operation of a business in the specific career area. 
                 The business situation to be analyzed will be presented as a case study.</DescriptionBar>
-            <RulesBarCareer rules={td_total_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2019/07/HS_Team_Guidelines.pdf" pi=""/>
+            <RulesBarCareer rules={td_total_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2019/07/HS_Team_Guidelines.pdf" pi="N/A"/>
             <EventListerCareer info={td_total_info['SubEvents']} pronoun="teams"/>
         </div>
         
