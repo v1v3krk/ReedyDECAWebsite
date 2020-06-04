@@ -60,9 +60,13 @@ class EventLister extends Component {
                             </div>
                             <div className="SubEventCardResources">
                                 <div className="lastStat">
-                                    <FaAtlas className="StatIcon"/>
-                                    <p className="StatHeader">Resources:</p>
-                                    <p className="StatDesc">(COMING SOON)</p>
+                                    <FaAtlas className="StatIcon" style={{color: "#25783b"}}/>
+                                    <a href={this.props.info[element]['quizessay']} target="_blank">
+                                        <p className="StatHeader" style={{color: "#25783b"}}>{!this.props.essay ? "Quizlets" : "Past Essays"}</p>
+                                    </a>
+                                    <p className="StatHeader" style={{color: "#25783b"}}>Roleplay Chatbot</p>
+                                    {this.props.imc ?
+                                    <p className="StatHeader" style={{color: "#25783b"}}>Quizlets</p>: null}
                                 </div>
                             </div>
                         </div>
@@ -87,9 +91,22 @@ class EventLister extends Component {
                                 <p className="StatDesc">ICDC: {this.props.info[element]['Success']} {this.props.pronoun}</p>
                             </div>  
                             <div className="lastStat">
-                                <FaAtlas className="StatIcon"/>
-                                <p className="StatHeader">Resources:</p>
-                                <p className="StatDesc">(COMING SOON)</p>
+                                <div>
+                                    <FaAtlas className="StatIcon" style={{color: "#25783b"}}/>
+                                    <a href={this.props.info[element]['quizessay']} target="_blank">
+                                        <p className="StatHeader" style={{color: "#25783b"}}>{!this.props.essay ? "Quizlets" : "Past Essays"}</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <FaAtlas className="StatIcon" style={{color: "#25783b"}}/>
+                                    <p className="StatHeader" style={{color: "#25783b"}}>Roleplay Chatbot</p>
+                                </div>
+                                {this.props.imc ?
+                                <div>
+                                    <FaAtlas className="StatIcon" style={{color: "#25783b"}}/>
+                                    <p className="StatHeader" style={{color: "#25783b"}}>Quizlets</p>
+                                </div>: null }
+                                
                             </div> 
                         </div>
                     </div>:

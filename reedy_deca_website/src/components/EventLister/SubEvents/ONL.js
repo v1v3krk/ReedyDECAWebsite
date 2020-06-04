@@ -20,6 +20,7 @@ const onl = (props) => {
                 'ParticipancyDistrict': "N/A",
                 'ParticipancyState': "N/A",
                 'Success': 25,
+                'quizessay': 'https://drive.google.com/file/d/18iBDBKL8aBSWjHRdGEWY-ZIuKy5RVkSS/view?usp=sharing'
             },
         }
     }
@@ -82,9 +83,9 @@ const onl = (props) => {
             <JumbotronUniversal>ONLINE</JumbotronUniversal>
             <DescriptionBar>DECA’s Online Events provide opportunities for students to participate in online simulations to learn how to invest in the stock market, manage personal finances, or operate a business venture.</DescriptionBar>
             <RulesBar rules={onl_top_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2019/07/HS_SMG_Guidelines.pdf" ppc="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf"/>
-            <EventListerPBA info={onl_top_info['SubEvents']} pronoun="people" smg/>
+            <EventListerPBA info={onl_top_info['SubEvents']} pronoun="teams" smg essay=" "/>
             <RulesBar rules={onl_bottom_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2019/07/HS_VBC_Guidelines.pdf" ppc="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" smg/>
-            <EventListerPBA info={onl_bottom_info['SubEvents']} pronoun="people"/>
+            <EventListerPBA info={onl_bottom_info['SubEvents']} pronoun="teams" essay=" "/>
         </div>
         
     );

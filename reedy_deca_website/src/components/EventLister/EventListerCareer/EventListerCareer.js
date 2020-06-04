@@ -64,12 +64,12 @@ class EventLister extends Component {
                             <div className="CareerSubEventCardPIS">
                                 <a href={this.props.info[element]['PI']} target="_blank" style={{textDecoration:'none'}}>
                                     {!this.props.ee ? 
-                                    <div className="CareerlastStat">
+                                    <div>
                                         <FaList className="CareerStatIcon" style={{color:'#25783b'}}/>
                                         <p className="CareerStatHeader" style={{color:'#25783b'}}>Performance Indicators</p>
                                         <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
                                     </div>:
-                                    <div className="CareerlastStat">
+                                    <div>
                                         <MdGavel className="CareerStatIcon" style={{color:'#25783b'}}/>
                                         <p className="CareerStatHeader" style={{color:'#25783b'}}>Guidelines</p>
                                         <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
@@ -79,9 +79,11 @@ class EventLister extends Component {
                             </div>
                             <div className="CareerSubEventCardResources">
                                 <div className="CareerlastStat">
-                                    <FaAtlas className="CareerStatIcon"/>
-                                    <p className="CareerStatHeader">Resources:</p>
-                                    <p className="CareerStatDesc">(COMING SOON)</p>
+                                    <FaAtlas className="CareerStatIcon" style={{color: "#25783b"}}/>
+                                    <a href={this.props.info[element]['quizessay']} target="_blank">
+                                        <p className="StatHeader" style={{color: "#25783b"}}>{!this.props.essay ? "Quizlets" : "Past Essays"}</p>
+                                    </a>
+                                    <p className="CareerStatHeader" style={{color: "#25783b"}}>Roleplay Chatbot</p>
                                 </div>
                             </div>
                         </div>
@@ -109,23 +111,31 @@ class EventLister extends Component {
                                 <a href={this.props.info[element]['PI']} target="_blank" style={{textDecoration:'none'}}>
                                     {!this.props.ee ? 
                                     <div>
-                                        <FaList className="CareerStatIcon"/>
-                                        <p className="CareerStatHeader">Performance Indicators</p>
+                                        <FaList className="CareerStatIcon" style={{color: "#25783b"}}/>
+                                        <p className="CareerStatHeader" style={{color: "#25783b"}}>Performance Indicators</p>
                                         <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
                                     </div>
                                     :
                                     <div>
-                                        <MdGavel className="CareerStatIcon"/>
-                                        <p className="CareerStatHeader">Guidelines</p>
-                                        <p className="CareerStatDesc" style={{color:'black'}}>(Click Here)</p>
+                                        <MdGavel className="CareerStatIcon" style={{color: "#25783b"}}/>
+                                        <p className="CareerStatHeader" style={{color: "#25783b"}}>Guidelines</p>
+                                        <p className="CareerStatDesc"style={{color: "#25783b"}}>(Click Here)</p>
                                     </div>
                                     }
                                 </a>
                             </div>   
                             <div className="CareerlastStat">
-                                <FaAtlas className="CareerStatIcon"/>
-                                <p className="CareerStatHeader">Resources:</p>
-                                <p className="CareerStatDesc">(COMING SOON)</p>
+                                
+                                <div>
+                                    <FaAtlas className="CareerStatIcon" style={{color: "#25783b"}}/>
+                                    <a href={this.props.info[element]['quizessay']} target="_blank">
+                                        <p className="StatHeader" style={{color: "#25783b"}}>{!this.props.essay ? "Quizlets" : "Past Essays"}</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <FaAtlas className="CareerStatIcon" style={{color: "#25783b"}}/>
+                                    <p className="CareerStatHeader" style={{color: "#25783b"}}>Roleplay Chatbot:</p>
+                                </div>
                             </div> 
                         </div>
                     </div>:

@@ -20,14 +20,16 @@ const ee = (props) => {
                 'ParticipancyDistrict': 29,
                 'ParticipancyState': 61,
                 'Success': 8,
-                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EIP_Guidelines.pdf'
+                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EIP_Guidelines.pdf',
+                'quizessay': 'https://drive.google.com/drive/folders/1erbvgCw41-BXthBbAYeAGYDkl0Jx2sDm?usp=sharing'
             },
             'Start-Up Business Plan': {
                 'Description': 'The purpose of the Start-Up Business Plan Event is to provide an opportunity for the participant to develop and present a proposal to form a business. The event provides an opportunity for a participant to develop and demonstrate mastery of essential knowledge and skills as they apply to the analysis of a business opportunity.',
                 'ParticipancyDistrict': 31,
                 'ParticipancyState': 63,
                 'Success': 8,
-                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_ESB_Guidelines.pdf'
+                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_ESB_Guidelines.pdf',
+                'quizessay': 'https://drive.google.com/drive/folders/1A76ZwqkRvnsTHGfLgZ4GGYxTo97INyzC?usp=sharing'
             },
         }
     }
@@ -45,28 +47,32 @@ const ee = (props) => {
                 'ParticipancyDistrict': 13,
                 'ParticipancyState': 47,
                 'Success': 8,
-                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EIB_Guidelines.pdf'
+                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EIB_Guidelines.pdf',
+                'quizessay': 'https://drive.google.com/drive/folders/1LkYp7jThhXG99x5bukrEt1FJcZZCbXqQ?usp=sharing'
             },
             'International Business Plan': {
                 'Description': 'The International Business Plan Event involves the development of a proposal to start a new business venture in an international setting. Any type of business may be used.',
                 'ParticipancyDistrict': "N/A",
                 'ParticipancyState': 29,
                 'Success': 8,
-                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_IBP_Guidelines.pdf'
+                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_IBP_Guidelines.pdf',
+                'quizessay': 'https://drive.google.com/drive/folders/1EvztpNqq4S653HbGBMv9tN6W7Mv4-GhQ?usp=sharing'
             },
             'Business Growth Plan': {
                 'Description': 'The Business Growth Plan involves the idea generation and strategy development needed to grow an existing business. Participants in the Business Growth Plan will analyze their current business operations and identify opportunities to grow and expand the business.',
                 'ParticipancyDistrict': 4,
                 'ParticipancyState': 17,
                 'Success': 8,
-                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EBG_Guidelines.pdf'
+                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EBG_Guidelines.pdf',
+                'quizessay': 'https://drive.google.com/drive/folders/1dxFfrC0AioBZZjH7sAIZnbyCBlNgEz3n?usp=sharing'
             },
             'Franchise Business Plan': {
                 'Description': 'The purpose of the Franchise Business Plan Event is designed for participants to present a comprehensive business plan proposal to buy into an existing franchise. The participant seeks to become a franchisee.',
                 'ParticipancyDistrict': 14,
                 'ParticipancyState': 41,
                 'Success': 8,
-                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EFB_Guidelines.pdf'
+                'PI': 'https://www.deca.org/wp-content/uploads/2019/07/HS_EFB_Guidelines.pdf',
+                'quizessay': 'https://drive.google.com/drive/folders/1VObxvm4BfWJ1LfGKaBO0S1x3CJjQaSUs?usp=sharing'
             },
         }
     }
@@ -76,9 +82,9 @@ const ee = (props) => {
             <JumbotronUniversal>ENTREPRENEURSHIP</JumbotronUniversal>
             <DescriptionBar>DECA’s Entrepreneurship Events provide opportunities to explore entrepreneurial concepts from idea generation, business planning, to growing an existing business.</DescriptionBar>
             <RulesBarCareer rules={ee_top_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" ppc="N/A" ee/>
-            <EventListerCareer info={ee_top_info['SubEvents']} pronoun="teams" ee/>
+            <EventListerCareer info={ee_top_info['SubEvents']} pronoun="teams" ee essay=" "/>
             <RulesBarCareer rules={ee_bottom_info['Rules']} guidelines="https://www.deca.org/wp-content/uploads/2018/07/Penalty-Point-Checklist.pdf" ppc="N/A" ee top/>
-            <EventListerCareer info={ee_bottom_info['SubEvents']} pronoun="teams" ee/>
+            <EventListerCareer info={ee_bottom_info['SubEvents']} pronoun="teams" ee essay=" "/>
         </div>
         
     );
