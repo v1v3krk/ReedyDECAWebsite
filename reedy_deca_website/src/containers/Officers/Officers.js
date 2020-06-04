@@ -8,7 +8,9 @@ class Officers extends Component {
     render() {
         return (
             <div>
-                <JumbotronUniversal>OFFICERS</JumbotronUniversal>
+                <JumbotronUniversal>
+                    OFFICERS
+                </JumbotronUniversal>
                 <OfficerList />
             </div>
             

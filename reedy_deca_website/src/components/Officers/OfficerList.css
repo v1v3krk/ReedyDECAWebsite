@@ -39,11 +39,11 @@
 }
 
 .OfficerCardName {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 .OfficerCardPosition {
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 
 .OfficerListHolder {
@@ -52,6 +52,12 @@
     grid-template-columns: 1fr;
     gap: 20px;
 }
+
+.SearchForm {
+    width: 100%;
+    max-width: 500px;
+}
+
 
 @media screen and (min-width: 600px) {
     .OfficerListHolder {
@@ -87,4 +93,38 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 20px;
     }
+}
+
+.SearchBar {
+    color: white;
+    background-color: #4a86e8;
+    padding: 40px 30px;
+    font-family: 'Oswald';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 660px) {
+
+    .SearchBar {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .SearchBar {
+        font-size: 1.4em;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .SearchBar {
+        font-size: 1.6em;
+    }
+    
 }
