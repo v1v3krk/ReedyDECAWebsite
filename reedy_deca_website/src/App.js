@@ -16,6 +16,7 @@ import PM from './components/EventLister/SubEvents/PM';
 import IMC from './components/EventLister/SubEvents/IMC';
 import PSC from './components/EventLister/SubEvents/PSC';
 import ONL from './components/EventLister/SubEvents/ONL';
+import Officers from './containers/Officers/Officers';
 import Contacts from './containers/Contacts/Contacts';
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/events/imc" component={IMC} />
         <Route path="/events/psc" component={PSC} />
         <Route path="/events/o" component={ONL} />
+        <Route path="/officers" component={Officers} />
         <Route path="/contact" component={Contacts} />
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>

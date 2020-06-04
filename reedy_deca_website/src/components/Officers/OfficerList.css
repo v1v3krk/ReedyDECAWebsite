@@ -1,0 +1,90 @@
+.OfficerCard {
+    background-color: #eeeeee;
+    padding: 20px;
+    font-family: 'Oswald';
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.OfficerCardIcon {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 40px;
+    color: #25783b;
+}
+
+.OfficerCardSet {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.OfficerCardHeadshot {
+    background-color: #dddddd;
+    border-radius: 50%;
+    padding-top: 60%;
+    width: 60%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: inset;
+}
+
+.OfficerCardDesc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.OfficerCardName {
+    font-size: 1.5em;
+}
+
+.OfficerCardPosition {
+    font-size: 1.25em;
+}
+
+.OfficerListHolder {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .OfficerListHolder {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .OfficerListHolder {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .OfficerListHolder {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .OfficerListHolder {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
