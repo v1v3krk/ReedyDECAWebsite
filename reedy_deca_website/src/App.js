@@ -18,6 +18,7 @@ import PSC from './components/EventLister/SubEvents/PSC';
 import ONL from './components/EventLister/SubEvents/ONL';
 import Officers from './containers/Officers/Officers';
 import Contacts from './containers/Contacts/Contacts';
+import Calendar from './containers/Calendar/Calendar';
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
         <Route path="/events/o" component={ONL} />
         <Route path="/officers" component={Officers} />
         <Route path="/contact" component={Contacts} />
+        <Route path="/calendar" component={Calendar} />
+
         <footer style={{marginTop:'20px'}}>
           <div class="footer"/>
         </footer>

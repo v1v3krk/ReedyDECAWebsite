@@ -1,0 +1,22 @@
+.AgendaView {
+    width: 100%;
+    border-width: 0px;
+    height: 800px;
+}
+
+.MonthView {
+    display: none;
+}
+
+@media screen and (min-width: 660px) {
+    .AgendaView {
+        display: none;
+    }
+
+    .MonthView {
+        display: block;
+        width: 100%;
+        border-width: 0px;
+        height: 1000px;
+    }
+}
