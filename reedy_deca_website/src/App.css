@@ -2,43 +2,99 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
+/* 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  display: flex;
+  background-color: #1750ac;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
-  background-color: #4a86e8;
-  height: 150px;
+  max-width: 1000px;
+  min-height: 150px;
   margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Oswald';
+  gap: 15px;
+  text-align: center;
+}
+
+.credits, .socials, .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits {
+  flex-flow: column;
+  margin: 15px;
+}
+
+.footer.credits p{
+  text-align: left;
+}
+
+
+.socials{
+  display: flex;
+  flex-flow: column;
+  margin: 15px;
+}
+
+.social {
+  font-size: 30px;
+  margin: 0px 7.5px;
+}
+
+.footer p {
+  margin: 0px;
+}
+
+.trademarkphrase {
+  font-size: 60px;
+}
+
+@media screen and (min-width: 660px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .credits{
+    grid-column: 2/3;
+  }
+  .socials{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer {
+    grid-template-columns: 3fr 2fr 2fr;
+  }
+  .brand {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .credits{
+    grid-column: auto;
+  }
+  .socials{
+    grid-column: auto;
+    grid-row: auto;
+    
+  }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './OfficerList.css';
 import {Form} from 'react-bootstrap';
-import {FaChessQueen,FaUserTie,FaHandsHelping,FaBriefcase,FaComments, FaAd,FaMobileAlt ,FaDollarSign,FaLaptopCode, FaGlobe, FaStoreAlt, FaBell} from 'react-icons/fa';
+import {FaChessQueen,FaUserTie,FaHandsHelping,FaBriefcase,FaComments, FaAd,FaMobileAlt ,FaDollarSign,FaLaptopCode, FaGlobe, FaStoreAlt, FaFrown} from 'react-icons/fa';
 
 import RishiN from '../../assets/images/OfficerPFPs/rishin.jpg';
 import SaathvikK from '../../assets/images/OfficerPFPs/saathvikk.jpg';
@@ -15,7 +15,7 @@ import Logo from '../../assets/images/SquareLogoPFP.png';
 class OfficerList extends Component {
 
     state = {
-        filteredName: ""
+        filteredName: "",
     }
 
     filterName = (event) => {
@@ -25,6 +25,8 @@ class OfficerList extends Component {
     }
 
     render() {
+
+        let onethere=false;
 
         const officers = {
             'sponser': {
@@ -186,13 +188,19 @@ class OfficerList extends Component {
                         headshotstyle['border'] = '5px solid #eeeeee'
                     }
 
+                    const searchname = (
+                        el.toLowerCase().includes(this.state.filteredName.toLowerCase()) || 
+                        officers[element][el]['title'].toLowerCase().includes(this.state.filteredName.toLowerCase()) || 
+                        element.toLowerCase().includes(this.state.filteredName.toLowerCase()) ||
+                        officers[element][el]['grade'].toLowerCase().includes(this.state.filteredName.toLowerCase()))
+
+                    if (searchname) {
+                        onethere=true;
+                    }
+
                     return (
                         <div class="OfficerCard" style={{backgroundColor: backcolor, 
-                            display: (
-                                el.toLowerCase().includes(this.state.filteredName.toLowerCase()) || 
-                                officers[element][el]['title'].toLowerCase().includes(this.state.filteredName.toLowerCase()) || 
-                                element.toLowerCase().includes(this.state.filteredName.toLowerCase()) ||
-                                officers[element][el]['grade'].toLowerCase().includes(this.state.filteredName.toLowerCase())) ? null : 'none'}}>
+                            display: searchname ? null : 'none'}}>
                             <div className="OfficerCardIcon" style={{color: textcolor}}>
                                 {officers[element][el]['icon']}
                             </div>
@@ -222,9 +230,15 @@ class OfficerList extends Component {
                         <Form.Control type="email" placeholder="Type Name, Position, or Grade" onChange={(event) => this.filterName(event)}/>
                     </Form>
                 </div>
+                {onethere ? 
                 <div className="OfficerListHolder">
                     {RenderOfficersCards}
+                </div> :
+                <div className="noresults">
+                    <FaFrown className="errorfrown"/>
+                    <h1>Sorry, No Results!</h1>
                 </div>
+                }
             </div>
                
         )
